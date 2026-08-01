@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- 背景：深色圆角方块 -->
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="#171717"/>
+  <!-- 树干：从"一句话"起点向上 -->
+  <line x1="128" y1="200" x2="128" y2="144" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <!-- 左枝 -->
+  <line x1="128" y1="144" x2="80" y2="100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <!-- 右枝 -->
+  <line x1="128" y1="144" x2="176" y2="100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <!-- 中枝 -->
+  <line x1="128" y1="144" x2="128" y2="100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <!-- 起点圆点（一句话） -->
+  <circle cx="128" cy="200" r="13" fill="#ffffff"/>
+  <!-- 左节点 -->
+  <circle cx="80" cy="100" r="16" fill="#ffffff" opacity="0.55"/>
+  <!-- 右节点 -->
+  <circle cx="176" cy="100" r="16" fill="#ffffff" opacity="0.55"/>
+  <!-- 中节点（当前聚焦/确认） -->
+  <circle cx="128" cy="100" r="18" fill="#10b981"/>
+</svg>

@@ -1,0 +1,64 @@
+{
+  "name": "thinkppt",
+  "version": "0.1.1",
+  "description": "AI PPT 生成工具——先想清楚，再一键成稿。职场汇报、学术答辩。",
+  "main": "./out/main/index.js",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "build:win": "electron-vite build && electron-builder --win",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "@xyflow/react": "^12.11.2",
+    "electron-store": "^11.0.2",
+    "framer-motion": "^12.42.2",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^1.24.0",
+    "mammoth": "^1.12.0",
+    "openai": "^6.47.0",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "uuid": "^14.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/uuid": "^11.0.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.0.0"
+  },
+  "allowScripts": {
+    "electron@43.1.1": true
+  },
+  "build": {
+    "appId": "com.thinkppt.app",
+    "productName": "thinkppt",
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    }
+  }
+}
